@@ -22,7 +22,8 @@
         "johnitvn/yii2-ajaxcrud": "*",
         "kartik-v/yii2-widgets": "*",
         "kartik-v/yii2-widget-timepicker": "*",
-        "fxp/composer-asset-plugin": "^1.4"
+        "fxp/composer-asset-plugin": "^1.4",
+        "consik/yii2-websocket": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
