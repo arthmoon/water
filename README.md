@@ -58,3 +58,10 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+
+https://cool-comp.ru/raspberry-pi-udalennoe-upravlenie-teamviewer-bez-probrosa-portov/
+https://www.8host.com/blog/nastrojka-servera-openvpn-v-ubuntu-18-04/
+http://hsd.net.ua/privyazka-usb-ustroystv-k-ttyusb
+
+
