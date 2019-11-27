@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%topic}}`.
  */
-class m191125_084850_create_post_table extends Migration
+class m191125_084838_create_topic_table extends Migration
 {
     /**
      * {@inheritdoc}
@@ -18,15 +18,13 @@ class m191125_084850_create_post_table extends Migration
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
 
-        $this->createTable('{{%post}}', [
+        $this->createTable('{{%topic}}', [
             'id' => $this->primaryKey(),
-            'post_id' => $this->string(250),
-            'author_href' => $this->string(250),
-            'author_thumb' => $this->string(250),
-            'author_name' => $this->string(250),
-            'datetime' => $this->dateTime(),
-            'content' => $this->text(),
-            'phone' => $this->string(250)
+            'title' => $this->string(250),
+            'href' => $this->string(250),
+            'count' => $this->integer(),
+            'status' => $this->string(250),
+            'offset' => $this->integer()
         ], $tableOptions);
     }
 
@@ -35,6 +33,6 @@ class m191125_084850_create_post_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%post}}');
+        $this->dropTable('{{%topic}}');
     }
 }
